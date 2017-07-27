@@ -1,9 +1,11 @@
 <h2>Meus Filmes!</h2>
 <div style="display: flex">
   <ul class="heroes" style="text-align: left">
-    <li *ngFor="let filme of filmes" [class.selected]="filme === filmeSelecionado" (click)="onSelect(filme)">
+    <li *ngFor="let filme of filmes"
+        [class.selected]="filme === filmeSelecionado"
+        [routerLink]="['/filme', filme.id]"
+        (click)="onSelect(filme)">
       <span class="badge">{{filme.id}}</span> {{ filme.nome }}
     </li>
   </ul>
 </div>
-<app-filme-info [filme]="filmeSelecionado"></app-filme-info>

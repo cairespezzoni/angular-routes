@@ -10,11 +10,9 @@ export class FilmeService {
     return Promise.resolve(FILMES);
   }
 
-  getFilmesLento(): Promise<Filme[]> {
-    return new Promise(resolve => {
-      // Simulando a latência do servidor
-      setTimeout(() => resolve(this.getFilmes()), 2000);
-    });
+  getFilme(id: number): Promise<Filme> {
+    return this.getFilmes()
+              .then(filmes => filmes.find(filme => filme.id === id));
   }
 
   constructor() { }
