@@ -1,6 +1,8 @@
 <div *ngIf="jogo">
   <h2>Sobre {{ jogo.nome }}</h2>
-  <div><label>id: </label>{{jogo.id}}</div>
+  <div>
+    <label>id: </label>{{jogo.id}}
+  </div>
   <div>
     <label>Nome: </label>
     <input [(ngModel)]="jogo.nome" placeholder="nome"/>
@@ -9,4 +11,5 @@
     <label>Plataforma: </label>
     <input [(ngModel)]="jogo.plataforma" placeholder="plataforma"/>
   </div>
+  <button (click)="voltar()">Voltar</button>
 </div>

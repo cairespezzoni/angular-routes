@@ -1,7 +1,7 @@
 <h2>Meus Jogos!</h2>
 <div style="display: flex">
   <ul class="heroes" style="text-align: left">
-    <li *ngFor="let jogo of jogos" [class.selected]="jogo === jogoSelecionado" (click)="onSelect(jogo)">
+    <li *ngFor="let jogo of jogos" [class.selected]="jogo === jogoSelecionado">
       <span class="badge">{{ jogo.id }}</span> {{ jogo.nome }}
     </li>
   </ul>

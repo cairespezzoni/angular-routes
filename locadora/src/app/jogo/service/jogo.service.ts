@@ -10,11 +10,9 @@ export class JogoService {
     return Promise.resolve(JOGOS);
   }
 
-  getJogosLento(): Promise<Jogo[]> {
-    return new Promise(resolve => {
-      // Simulando a latência do servidor
-      setTimeout(() => resolve(this.getJogos()), 2000);
-    });
+  getJogo(id: number): Promise<Jogo> {
+    return this.getJogos()
+              .then(jogos => jogos.find(jogo => jogo.id === id));
   }
 
   constructor() { }

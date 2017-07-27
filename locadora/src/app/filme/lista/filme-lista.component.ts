@@ -8,6 +8,7 @@ import { FilmeService } from 'app/filme/service/filme.service';
   templateUrl: './filme-lista.component.html',
   styleUrls: ['./filme-lista.component.css']
 })
+
 export class FilmeListaComponent implements OnInit {
 
   filmes: Filme[];

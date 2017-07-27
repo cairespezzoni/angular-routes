@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { Jogo } from 'app/jogo/jogo';
 
@@ -7,10 +7,18 @@ import { Jogo } from 'app/jogo/jogo';
   templateUrl: './jogo-info.component.html',
   styleUrls: ['./jogo-info.component.css']
 })
-export class JogoInfoComponent {
+
+export class JogoInfoComponent implements OnInit {
 
   @Input() jogo: Jogo;
 
-  constructor() { }
+  constructor(
+  ) { }
+
+  ngOnInit(): void {
+  }
+
+  voltar(): void {
+  }
 
 }
