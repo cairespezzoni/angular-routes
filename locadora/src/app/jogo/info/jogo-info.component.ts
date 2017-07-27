@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Jogo } from './jogo';
+import { Jogo } from 'app/jogo/jogo';
 
 @Component({
   selector: 'app-jogo-info',

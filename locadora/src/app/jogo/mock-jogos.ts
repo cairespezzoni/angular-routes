@@ -1,4 +1,4 @@
-import { Jogo } from './jogo';
+import { Jogo } from 'app/jogo/jogo';
 
 export const JOGOS: Jogo[] = [
   { id: 11, nome: 'Super Mario World', plataforma: 'Super Nintendo' },

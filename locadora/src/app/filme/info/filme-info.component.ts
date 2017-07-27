@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Filme } from './filme';
+import { Filme } from 'app/filme/filme';
 
 @Component({
   selector: 'app-filme-info',

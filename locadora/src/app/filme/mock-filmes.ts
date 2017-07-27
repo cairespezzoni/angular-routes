@@ -1,4 +1,4 @@
-import { Filme } from './filme';
+import { Filme } from 'app/filme/filme';
 
 export const FILMES: Filme[] = [
   { id: 11, nome: 'A Volta Dos Que Não Foram', genero: 'Terror' },

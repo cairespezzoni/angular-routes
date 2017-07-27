@@ -1,17 +1,6 @@
-<!--The whole content below can be removed with the new code.-->
-<!-- <div style="text-align: center">
+<div style="text-align: center">
   <h1>
     Bem-vindo a {{ title }}!!
   </h1>
   <img width="300" src="https://media.tenor.com/images/6e8d8e8a75b8adb2b202a47f39c75999/tenor.gif" />
-</div> -->
-<h1>{{ title }}</h1>
-<h2>Meus Filmes!</h2>
-<div style="display: flex">
-  <ul class="heroes" style="text-align: left">
-    <li *ngFor="let filme of filmes" [class.selected]="filme === filmeSelecionado" (click)="onSelect(filme)">
-      <span class="badge">{{filme.id}}</span> {{ filme.nome }}
-    </li>
-  </ul>
 </div>
-<app-filme-info [filme]="filmeSelecionado"></app-filme-info>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Jogo } from './jogo';
-import { JogoService } from './jogo.service';
+import { Jogo } from 'app/jogo/jogo';
+import { JogoService } from 'app/jogo/service/jogo.service';
 
 @Component({
   selector: 'app-jogo-lista',

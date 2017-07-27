@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { Filme } from './filme';
-import { FILMES } from './mock-filmes';
+import { Filme } from 'app/filme/filme';
+import { FILMES } from 'app/filme/mock-filmes';
 
 @Injectable()
 export class FilmeService {

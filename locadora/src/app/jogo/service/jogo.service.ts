@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { Jogo } from './jogo';
-import { JOGOS } from './mock-jogos';
+import { Jogo } from 'app/jogo/jogo';
+import { JOGOS } from 'app/jogo/mock-jogos';
 
 @Injectable()
 export class JogoService {
