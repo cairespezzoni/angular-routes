@@ -1,0 +1,23 @@
+@import "../../node_modules/ng-smn-ui/core/core.scss";
+@import "../../node_modules/ng-smn-ui/core/theme.scss";
+
+$primary: (color: 'teal', hue: '500');
+$accent: (color: 'pink', hue: '400');
+
+$theme: ui-theme($primary, $accent);
+$theme-dark: ui-theme($primary, $accent, true);
+
+@include ui-core();
+
+@include ui-build-theme($theme);
+
+.dark {
+    color: map_get($theme-dark, primary-text-color);
+    @include ui-build-theme($theme-dark);
+}
+
+.light {
+    color: map_get($theme, primary-text-color);
+    @include ui-build-theme($theme);
+}
+

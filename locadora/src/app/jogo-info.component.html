@@ -1,0 +1,12 @@
+<div *ngIf="jogo">
+  <h2>Sobre {{ jogo.nome }}</h2>
+  <div><label>id: </label>{{jogo.id}}</div>
+  <div>
+    <label>Nome: </label>
+    <input [(ngModel)]="jogo.nome" placeholder="nome"/>
+  </div>
+  <div>
+    <label>Plataforma: </label>
+    <input [(ngModel)]="jogo.plataforma" placeholder="plataforma"/>
+  </div>
+</div>
